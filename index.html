@@ -4,64 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css"/>
     <title>S Star Auto Shop</title>
-    <h1>S Star Auto</h1>
-    <p>This is some text for now and i will change it later on.</p>
+    <style type="text/css">
+  #slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+    </style>
   </head>
-  <br />
-  <br />
-  <br />
-  <br />
   <body>
     <div class="container">
       <div class="navbar">
         <img src="./Pictures/logo.png" class="logo" />
+        Monday - Saturday
+        9 - 5
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Request a Callback</a></li>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <li><a href="">Call us today! (647)-436-5088</a></li>
+          </ul>
+        </nav>
       </div>
+
+
+
+
+    <div id="slider">
+      <figure id='sizer'>
+        <img src="./Pictures/picture 1.jpg" height="500" width="1600">
+        <img src="./Pictures/picture 2.png" height="500" width="1600">
+        <img src="./Pictures/shop.jpeg" height="500" width="1600">
+        <img src="./Pictures/shop2.jpg" height="500" width="1600">
+        <img src="./Pictures/shop3.jpg" height="500" width="1600">
+      </figure>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
     </div>
-    <img src="./Pictures/picture 1.jpg" alt="Picture 1" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <h1>Our History</h1>
-    <p>This is some text for now and i will change it later on.</p>
 
-    <img src="./Pictures/picture 2.png" alt="Picture 2" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <h1>Check out what our customers have been saying about us!</h1>
-    <p>
-      Click the link below to see what our customer have been saying on Google
-      Maps.
-    </p>
 
-    <a
-      href="https://www.google.com/maps/place/S+Star+Auto+Service/@43.7041894,-79.2693492,15z/data=!4m12!1m6!3m5!1s0x0:0xe8c0745705d10808!2sS+Star+Auto+Service!8m2!3d43.704127!4d-79.2693887!3m4!1s0x0:0xe8c0745705d10808!8m2!3d43.704127!4d-79.2693887"
-      target="_blank"
-      >Google Review</a
-    >
-    <h1>Request a callback:</h1>
+      <div class="banner">
+        <h1>Auto Mechanic Repair and Safety in Scarborough</h1>
+        <img src="./Pictures/service.png" class= 'bannerImage'>
+        <h2 class="serviceHeader">We offer the following services: <h2/>
+          <ul>
+            <ul>Repairs</ul>
+            <ul>Alignments</ul>
+            <ul>Tire Changes</ul>
+            <ul>Safety Certifications</ul>
+            <ul>Car Sales</ul>
+            <ul>and much more....</ul>
+          </ul>
+        <h5>Reminder: Please call to confirm avalibility</h5>
 
-    <form action="results.html" method="GET">
-      <div>
-        <label for="name"> Name</label>
-        <input name="name" id="name" />
+
+          <br>
+        <h1>About S Star Auto</h1>
+        <p>This is some text for now and i will change it later on.</p> 
+        <ul>
+          Trust Worthy
+        </ul>
+        <ul>
+          Well Reviewed
+        </ul>
+        <ul>
+          20+ years of experience
+        </ul>
+        <ul>
+          Family Business
+        </ul>
+        <ul>
+          Speak multiple languges
+        </ul>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>Check out what our customers have been saying about us!</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3058187703396!2d-79.2715378841407!3d43.704193257149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce8a9fb5367f%3A0xe8c0745705d10808!2sS%20Star%20Auto%20Service!5e0!3m2!1sen!2sca!4v1634441162867!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>
+          Click the link below to see what our customer have been saying on Google
+          Maps.
+        </p>
+    
+        <a
+          href="https://www.google.com/maps/place/S+Star+Auto+Service/@43.7041894,-79.2693492,15z/data=!4m12!1m6!3m5!1s0x0:0xe8c0745705d10808!2sS+Star+Auto+Service!8m2!3d43.704127!4d-79.2693887!3m4!1s0x0:0xe8c0745705d10808!8m2!3d43.704127!4d-79.2693887"
+          target="_blank"
+          >Google Review</a
+        >
+        <h1>Request a callback:</h1>
+    
+        <form action="results.html" method="GET">
+          <div>
+            <label for="name"> Name</label>
+            <input name="name" id="name" />
+          </div>
+          <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input phoneNumber="phoneNumber" id="phoneNumber" />
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <div>
-        <label for="phoneNumber">Phone Number</label>
-        <input phoneNumber="phoneNumber" id="phoneNumber" />
-      </div>
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
-    </form>
+      <h1>Our Contact Info</h1>
+      <ul>
+        Address: 
+      </ul>
+      <ul>
+        Timings: 
+      </ul>
+      <ul>
+        Phone Number: 
+      </ul>
+      <ul>
+        E-mail: 
+      </ul>
+      
+      
+
+    </div>
   </body>
   <footer>
-    <ol>
-      <li>About Us</li>
-      <li>Contact Us</li>
-    </ol>
   </footer>
 </html>

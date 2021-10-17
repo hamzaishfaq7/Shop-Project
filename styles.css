@@ -1,5 +1,16 @@
+html { 
+  background: grey; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
 .box {
-    background-image: url(./Pictures/background.jpg);
+    /* background-image: url(./Pictures/background.jpg); */
     padding: auto;
     margin: auto;
 }
@@ -13,17 +24,7 @@
 
 
   body {
-    /*
-    height: 100vh;
-    width: 100%;
-    background-image: url(./Pictures/background.png);
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%; 
-    box-sizing: border-box;
-    position: relative;
-    */
+
     
   }
 
@@ -31,7 +32,7 @@
   .container{
       height: 100vh;
       width: 100%;
-      background-image: url(./Pictures/background.png);
+      
       background-position: center;
       background-size: cover;
       padding-left: 5%;
@@ -39,4 +40,130 @@
       box-sizing: border-box;
       position: relative;
       
+  }
+
+  .sizer{
+
+    padding: auto;
+    max-height: 200px;
+
+
+  }
+
+  .navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    background: lightcoral;
+    background-size: contain;
+    background-size: 10px 10px;
+  }
+
+  .logo{
+    width: 160px;
+    cursor: pointer;
+    padding: 60px;
+  }
+
+  nav{
+    flex: 1;
+    padding-left: 60px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  .content p{
+    font-size: 20px;
+   color: black;
+  }
+
+  .content{
+    margin-left: 10%;
+    margin-top: -10%;
+    color: ;
+  }
+
+  .content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg,black, grey);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 8 px 88 px rgba(94,28,68,0.15);
+  }
+
+
+  .arrow-icons{
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+  }
+
+  .feature-image{
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
+
+  .social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -90px;
+    bottom: 180px;
+  }
+
+  .social-links a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+
+  h1{
+    color: lightcoral;
+  }
+  
+  .banner{
+    padding: center;
+    text-align: center;
+  }
+
+  .bannerImage{
+    padding: center;
+    text-align: center;
+  }
+
+  .serviceHeader{
+    font-size:xx-large
+    font-family: 'Courier New', Courier, monospace;
+    color: lightcoral;
   }

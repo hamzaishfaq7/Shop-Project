@@ -167,3 +167,18 @@ html {
     font-family: 'Courier New', Courier, monospace;
     color: lightcoral;
   }
+
+
+
+  .textWrapper{
+    width: 100%;
+    position: relative;
+    
+  }
+
+  .textWrapper h1{
+    text-align: center;
+    color: coral;
+    font-size: 10vw;
+    
+  }

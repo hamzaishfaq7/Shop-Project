@@ -1,45 +1,74 @@
-html { 
-  background: grey; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
 }
 
 
+li, a, button{
+
+  font-family: "Merriweather", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ECF0F1;
+  text-decoration: none;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
 
 
-.box {
-    /* background-image: url(./Pictures/background.jpg); */
+  .logo{
+    width: 400px;
+    cursor: pointer;
+    padding: 60px;
     padding: auto;
-    margin: auto;
-}
-
-.div {
-    width: 600px;
-    height: 500px;
-    border: 100px solid blue;
-    box-sizing: border-box;
   }
 
-
-  body {
-
-    
+  
+  .navlinks{
+    list-style: none;
   }
 
+  .navlinks li {
+  
+    display: inline-block;
+    padding: 0px 20px;
+  }
 
-  .container{
-      height: 100vh;
-      width: 100%;
-      
-      background-position: center;
-      background-size: cover;
-      padding-left: 5%;
-      padding-right: 5%; 
-      box-sizing: border-box;
-      position: relative;
-      
+  .navlinks li a {
+
+    transition: all 0.3s ease 0s;
+
+  }
+
+  .navlinks li a:hover {
+
+    color: #0088A9;
+
+  }
+
+  button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  button.hover {
+    background-color: rgba(0, 136, 169, 0.8);
   }
 
   .sizer{
@@ -50,24 +79,7 @@ html {
 
   }
 
-  .navbar{
-    width: 93%;
-    height: 1vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    text-align: center;
-    background: rgb(238, 228, 228);
-    background-size: contain;
-    background-size: 10px 10px;
-  }
 
-  .logo{
-    width: 160px;
-    cursor: pointer;
-    padding: 60px;
-  }
 
   nav{
     flex: 1;
@@ -82,7 +94,7 @@ html {
 
   nav ul li a{
     text-decoration: none;
-    color: black;
+    color: #ECF0F1;
   }
 
   .content h1{
@@ -90,12 +102,12 @@ html {
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: black;
+    color: #ECF0F1;
   }
 
   .content p{
     font-size: 20px;
-   color: black;
+   color: #ECF0F1;
   }
 
   .content{
@@ -106,12 +118,12 @@ html {
 
   .content .btn{
     display: inline-block;
-    background: linear-gradient(45deg,black, grey);
+    background: linear-gradient(45deg,#ECF0F1, grey);
     border-radius: 6px;
     padding: 10px 20px;
     box-sizing: border-box;
     text-decoration: none;
-    color: black;
+    color: #ECF0F1;
     box-shadow: 3px 8 px 88 px rgba(94,28,68,0.15);
   }
 
@@ -141,17 +153,36 @@ html {
   }
 
   .social-links a{
+    font-family: "Merriweather", sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ECF0F1;
     padding-right: 20px;
     font-size: 14px;
   }
 
 
   h1{
-    color: lightcoral;
+    color: #ECF0F1;
+  }
+
+  h2{
+    color: #ECF0F1;
+  }
+
+  h5{
+    color: #ECF0F1;
+  }
+
+  p{
+    color: #ECF0F1;
   }
   
+
+  ul{
+
+    color: #ECF0F1;
+  }
+
   .banner{
     padding: center;
     text-align: center;
@@ -164,8 +195,8 @@ html {
 
   .serviceHeader{
     font-size:xx-large
-    font-family: 'Courier New', Courier, monospace;
-    color: lightcoral;
+    font-family: "Merriweather", sans-serif;
+    color: #ECF0F1;
   }
 
 
@@ -178,7 +209,99 @@ html {
 
   .textWrapper h1{
     text-align: center;
-    color: coral;
+    color: #ECF0F1;
     font-size: 10vw;
     
   }
+
+
+  .callbackBMW {
+
+    align-self: right;
+    padding: auto;
+  }
+
+  .form {
+    align-self: left;
+    padding: auto;
+  }
+
+
+
+
+
+
+
+
+  footer{
+    bottom: 0;
+    left: 0;
+    right: 0;;
+    height: auto;
+    width: 100vw;
+    font-family: "Merriweather", sans-serif;
+    padding-top: 40px;
+    color: #fff;
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+
+
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+
+  .socials a:hover i{
+    color: aqua;
+  }
+
+  .copyright{
+    text-align: center;
+  }
+
+
+  .google_maps{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    align-content: right;
+}

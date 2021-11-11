@@ -7,83 +7,47 @@
     <link rel="stylesheet" href="./styles.css"/>
     <title>S Star Auto Shop</title>
     <style type="text/css">
-  #slider {
-	overflow: hidden;
-}
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 15s slider infinite;
-}
-#slider figure img {
-	width: 20%;
-	float: left;
-}
-
-@keyframes slider {
-	0% {
-		left: 0;
-	}
-	20% {
-		left: 0;
-	}
-	25% {
-		left: -100%;
-	}
-	45% {
-		left: -100%;
-	}
-	50% {
-		left: -200%;
-	}
-	70% {
-		left: -200%;
-	}
-	75% {
-		left: -300%;
-	}
-	95% {
-		left: -300%;
-	}
-	100% {
-		left: -400%;
-	}
-}
-
     </style>
   </head>
   <body>
+    <!--THIS IS THE NAVBAR CODE-->
       <header>
         <img class='logo' src="./Logo Designed/First Simple Logo.png" alt="logo">
         <nav>
           <ul class="navlinks">
             <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Reviews</a></li>
+            <li><a href="#">Call Us Today: 416-416-4165</a></li>
           </ul>
           </nav>
           <a class="cta" href="#"><button>Request a Callback</button></a>
       </header>
+      <!--THIS IS THE END OF THE NAVBAR CODE-->
 
-      <br>
-      <br>
-    <div id="slider">
-      <figure id='sizer'>
-        <div class="textWrapper">
-          
+
+
+      <!--THIS IS THE SLIDESHOW CODE-->
+      <div class="slideShow">
+        <div class="slideShowPictures">
+          <img src="./Pictures/shop.jpg" alt="">
+          <div class="slideShowText">
+            <h5>Welcome to S Star Auto</h5>
+            <p>We are an All around Mechanic Shop that can help out with any need!</p>
+          </div>
         </div>
-       
-        <img src="./Pictures/picture 1.png" height="900" width="400">
-        
-        <img src="./Pictures/picture 2.png" height="900" width="400">
-    
-        <img src="./Pictures/picture 3.png" height="900" width="400">
-
-        <img src="./Pictures/picture 4.jpg" height="900" width="400">
-      </figure>
-
+  
+  
+        <div class="slideShowPictures">
+          <img src="./Pictures/shop2.png" alt="">
+          <div class="slideShowText">
+            <h5>30+ Years In the Business</h5>
+            <p>We've seen it all, and helped with it all!</p>
+          </div>
+        </div>
+      </div>  
+      <!--THIS IS THE END OF THE SLIDESHOW CODE-->
       <br>
       <br>
       <br>
@@ -91,14 +55,26 @@
 
     </div>
 
+    <h1>Auto Mechanic Repair, Alignemnts, and Brake Services</h1>
+    <h1>We offer all service auto repair & maintenance</h1>
+
+
+    <!--THIS IS THE GRID LAYOUT CODE-->
+
+
+    <div class="main">
+      <img src="./ServicesPictures/Maintenance.png" alt="">
+      <img src="./ServicesPictures/OilChange.jpg" alt="">
+      <img src="./ServicesPictures/Alignments.png" alt="">
+      <img src="./ServicesPictures/Alignment.jpg" alt="">
+      <img src="./ServicesPictures/Brakes.png" alt="">
+      <img src="./ServicesPictures/BrakeChange.jpg" alt="">
+  </div>
+
+  <!--THIS IS THE END OF THE GRID LAYOUT CODE-->
+
 
       <div class="banner">
-        <br>
-        <br>
-          <br>
-          <br>
-        <img src="./Images Created/Our Services.png" class= 'bannerImage'>
-          <br>
         <img src="./Images Created/About Us.png" class="AboutUsImage">
 
         <br />
@@ -110,6 +86,10 @@
         <br>
         <br>
         <br>
+    </div>
+
+    
+        <!--THIS IS THE CALLBACK OPTION CODE-->
 
 
         <h1>Request a callback:</h1>
@@ -128,8 +108,11 @@
         </form>
       </div>
 
-    </div>
+      <!--THIS IS THE END OF THE CALLBACK OPTION CODE-->
+
   </body>
+
+  <!--THIS IS THE FOOTER CODE-->
   <footer>
     <div class="footer-content">
       <h2>Our Contact Info</h2>
@@ -155,4 +138,6 @@
       </div>
     </div>
   </footer>
+
+  <!--THIS IS THE END OF THE FOOTER CODE-->
 </html>

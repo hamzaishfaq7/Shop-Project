@@ -60,17 +60,34 @@
 
     <!--THIS IS THE GRID LAYOUT CODE-->
 
-    <div class="main">
-      <h1>Auto Mechanic Repair, Alignemnts, and Brake Services</h1>
-    <h1>We offer all service auto repair & maintenance</h1>
-    <br>
-      <img src="./ServicesPictures/Maintenance.png" alt="">
-      <img src="./ServicesPictures/OilChange.jpg" alt="">
-      <img src="./ServicesPictures/Alignments.png" alt="">
-      <img src="./ServicesPictures/Alignment.jpg" alt="">
-      <img src="./ServicesPictures/Brakes.png" alt="">
-      <img src="./ServicesPictures/BrakeChange.jpg" alt="">
-  </div>
+    <div class="grid">
+      <div class="box">
+        <h2>01</h2>
+        <h3>Service One</h3>
+        <p>test</p>
+        </div>
+
+        <div class="box">
+          <h2>02</h2>
+          <h3>Service 2</h3>
+          <p>test</p>
+          </div>
+
+          <div class="box">
+            <h2>03</h2>
+            <h3>Service 3</h3>
+            <p>test</p>
+            </div>
+
+            <div class="box">
+              <h2>04</h2>
+              <h3>Service 4</h3>
+              <p>test</p>
+              </div>
+    </div>
+
+
+
 
   <!--THIS IS THE END OF THE GRID LAYOUT CODE-->
 
@@ -83,9 +100,8 @@
       
         <!--THIS IS THE ABOUT US SECTION-->
         <h1>About S Star Auto</h1>
-        <p>ahfkjdsahfjklasdhfksjadhfaskjdfhasdkljfhsadkljfhsdakljfhkasljdfhasdkjfhaskdljfhaskdljfhskaldjfhkslajdhfksaldjfhasdkljfhsdakljfhsadkljfhsadlkjfhsalk dfhsidua fhsdlkf hsadkljfh sadkljfh ahfkjdsahfjklasdhfksjadhfaskjdfhasdkljfhsadkljfhsdakljfhkasljdfhasdkjfhaskdljfhaskdljfhskaldjfhkslajdhfksaldjfhasdkljfhsdakljfhsadkljfhsadlkjfhsalk
-        </p>
-        <img src="./Images Created/About Us.png" alt="">
+        <h2>ahfljfhaskdljfkdljfhskaldjfhkslajdhfksaldjfhasdkljfhsdakljfhsadkljfhsadlkjfhsalk</h2>
+        <img id="aboutUsCars" src="./Images Created/About Us.png" alt="">
         <!--THIS IS THE END OF THE ABOUT US SECTION-->
 
 
@@ -95,29 +111,53 @@
   <br>
 </div>
 
-<div class="callBack">
-    
-        <!--THIS IS THE CALLBACK OPTION CODE-->
+<!--THIS IS THE CONTACT FORM CODE-->
 
-
-        <h1>Request a callback:</h1>
-    
-        <form action="results.html" method="GET" class="form">
-          <div>
-            <label for="name"> Name</label>
-            <input name="name" id="name" />
-          </div>
-          <div>
-            <label for="phoneNumber">Phone Number</label>
-            <input phoneNumber="phoneNumber" id="phoneNumber" />
-          </div>
-          <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
-        </form>
+<div class="container">
+  <form action="results.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
       </div>
-
-      <!--THIS IS THE END OF THE CALLBACK OPTION CODE-->
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
     </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="cars">Car Type</label>
+      </div>
+      <div class="col-75">
+        <select id="cars" name="cars">
+          <option value="SUV">SUV</option>
+          <option value="Car">Car</option>
+          <option value="Truck">Truck</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<!--THIS IS THE END OF THE CONTACT FORM CODE-->
   </body>
 
   <!--THIS IS THE FOOTER CODE-->

@@ -7,13 +7,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: auto;
+  height: auto;
   background-color: #24252A;
-  align: center;
+  align-items: center;
 }
 
 html{
   font-size: 10px;
 }
+
 
 /*THIS IS THE END OF THE CODE FOR THE GENERIC LAYOUT*/
 
@@ -138,41 +141,26 @@ html{
 
 
 /*THIS IS THE CODE FOR THE GRID LAYOUT*/
-.main{
-  overflow: hidden;
-  align: center;
-  position: relative;
-  align-self: center;
+
+body{
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  margin-top: 10px;
-  width: 100vw;
-  display: block;
-  grid-template-columns: repeat(auto-fill, minmax(300px,300px));
-  column-gap: 1px;
-  row-gap: 1px;
-
+  min-height: 100vh;
 }
 
-.main h1{
-  font-size: 50px;
+.grid{
+  width: 1100px;
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
-.main img{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.5s;
+.grid .box{
+  position: relative;
+  width: 320px;
+  padding: 100px 40px 60px;
 }
 
-/*This is for the zoom effect on the cards*/
-
-.main img:hover{
-  transform: scale(1.2);
-}
 
 /*THIS IS THE END OF THE CODE FOR THE GRID LAYOUT*/
 
@@ -183,6 +171,9 @@ html{
   font-size: 50px;
   padding-top: 5px;
   align-content: center;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
 
 }
 
@@ -209,15 +200,14 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 0px 10%;
 }
 
 
   .logo{
     width: 400px;
     cursor: pointer;
-    padding: 60px;
-    padding: auto;
+    padding: 40px;
   }
 
   
@@ -274,7 +264,7 @@ header{
   nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0px 15px;
+    margin: 5px 15px;
   }
 
   nav ul li a{
@@ -298,7 +288,7 @@ header{
   .content{
     margin-left: 10%;
     margin-top: -10%;
-    color: ;
+    
   }
 
   .content .btn{
@@ -313,46 +303,20 @@ header{
   }
 
 
-  .arrow-icons{
-    margin-top: 40px;
-    display: flex;
-  }
 
-  .arrow-icons img{
-    width: 40px;
-    margin-right: 25px;
-  }
-
-  .feature-image{
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-  }
-
-  .social-links{
-    transform: rotate(-90deg);
-    position: absolute;
-    left: -90px;
-    bottom: 180px;
-  }
-
-  .social-links a{
-    font-family: "Merriweather", sans-serif;
-    text-decoration: none;
-    color: #ECF0F1;
-    padding-right: 20px;
-    font-size: 14px;
-  }
 
 
   h1{
     color: #ECF0F1;
     text-align: center;
+    padding: 10px;
   }
 
   h2{
     color: #ECF0F1;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
   }
 
   h5{
@@ -369,21 +333,6 @@ header{
     color: #ECF0F1;
   }
 
-  .banner{
-    padding: center;
-    text-align: center;
-  }
-
-  .bannerImage{
-    padding: center;
-    text-align: center;
-  }
-
-  .serviceHeader{
-    font-size:xx-large
-    font-family: "Merriweather", sans-serif;
-    color: #ECF0F1;
-  }
 
 
 
@@ -400,17 +349,6 @@ header{
     
   }
 
-
-  .callbackBMW {
-
-    align-self: right;
-    padding: auto;
-  }
-
-  .form {
-    align-self: left;
-    padding: auto;
-  }
 
 
 
@@ -496,3 +434,79 @@ header{
 }
 
 /*THIS IS THE END OF THE CODE FOR THE FOOTER LAYOUT*/
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #24252A;
+  padding: 20px;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.column{
+  width: 25em;
+}

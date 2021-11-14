@@ -740,3 +740,11 @@ h1{
 	font-size: 3rem;
 	margin-bottom: 8px;
 }
+
+
+
+.formSection{
+  align-items: center;
+  display: list-item;
+  box-sizing: border-box;
+}

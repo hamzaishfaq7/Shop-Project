@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish&display=swap');
 /*THIS IS THE CODE FOR THE GENERIC LAYOUT*/
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
 
 *{
 
@@ -11,10 +15,13 @@
   height: auto;
   background-color: #24252A;
   align-items: center;
+  font-family: 'Merriweather', serif;
+  font-family: 'Mulish', sans-serif;
+
 }
 
-html{
-  font-size: 10px;
+.changeText{
+  color: #0088A9;
 }
 
 
@@ -63,7 +70,6 @@ html{
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
   color:#fff;
   padding: 10rem 5rem;
 }
@@ -181,7 +187,7 @@ html{
 	border-radius: 10px;
 	width:300px;
 	padding: 8px 25px;
-	height: 400px;
+	height: 500px;
 	box-sizing: border-box;
 	margin: 30px;
 	position: relative;
@@ -423,7 +429,7 @@ header{
     color: #ECF0F1;
     text-align: center;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   h5{
@@ -585,7 +591,7 @@ footer{
 /* Footer Right */
 
 .gMaps{
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .footer-distributed .footer-right{
@@ -601,7 +607,7 @@ footer{
 }
 
 .footer-distributed .footer-company-about span{
-	display: block;
+	display: inline-block;
 	color:  #ffffff;
 	font-size: 18px;
 	font-weight: bold;
@@ -734,12 +740,6 @@ input[type=submit] {
 
 /*RANDOM STUFF*/
 
-h1{
-  color:white;
-	letter-spacing: 1px;
-	font-size: 3rem;
-	margin-bottom: 8px;
-}
 
 
 

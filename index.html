@@ -9,7 +9,7 @@
     <style type="text/css">
     </style>
   </head>
-  <body>
+  <div>
     <!--THIS IS THE NAVBAR CODE-->
       <header>
         <img class='logo' src="./Logo Designed/First Simple Logo.png" alt="logo">
@@ -58,38 +58,68 @@
     
 
 
-    <!--THIS IS THE GRID LAYOUT CODE-->
+    <!--THIS IS THE FLIP CARD LAYOUT CODE-->
+ 
 
-    <div class="grid">
-      <div class="box">
-        <h2>01</h2>
-        <h3>Service One</h3>
-        <p>test</p>
-        </div>
+    <section class="services">
+      <!--heading---------------->
+      <div class="s-heading">
+      <h1>Services Offered</h1>
+      <p>We offer the following services, and many more!</p>
+      </div>
+      <!--services-box-container------------------->
+      <div class="s-box-container">
+      <!--service-box-1---------------->	
+      <div class="s-box">
+      <!--top-bar-------->
+      <div class="bar"></div>
+      <!--img---------->
+      <img alt="1" src="./ServicesPictures/Alignment.jpg" />
+      <!--servies-name---------->
+      <h1>Alignments</h1>
+      <!--details------>
+        <p>We use the latest Laser Alignment Technology to set your car back to Factory Settings.</p>
+      <!--btn---------->
+      <a class="s-btn" href="#"> Find out More</a>
+      </div>
+        <!--service-box-1---------------->	
+      <div class="s-box">
+      <!--top-bar-------->
+      <div class="bar"></div>
+      <!--img---------->
+      <img alt="2" src="./ServicesPictures/BrakeChange.jpg" />
+      <!--servies-name---------->
+      <h1>Brake Service</h1>
+      <!--details------>
+        <p>Brakes are an important part of your car, let us check them out for you!</p>
+      <!--btn---------->
+      <a class="s-btn" href="#">Find out More</a>
+      </div>
+        <!--service-box-3---------------->	
+      <div class="s-box">
+      <!--top-bar-------->
+      <div class="bar"></div>
+      <!--img---------->
+      <img alt="3" src="./ServicesPictures/OilChange.jpg" />
+      <!--servies-name---------->
+      <h1>Oil Services</h1>
+      <!--details------>
+        <p>Changing the oil is the easiest thing to keep your car running for a while to come!</p>
+      <!--btn---------->
+      <a class="s-btn" href="#">Find out More</a>
+      </div>
+      </div>
+      </section>
 
-        <div class="box">
-          <h2>02</h2>
-          <h3>Service 2</h3>
-          <p>test</p>
-          </div>
-
-          <div class="box">
-            <h2>03</h2>
-            <h3>Service 3</h3>
-            <p>test</p>
-            </div>
-
-            <div class="box">
-              <h2>04</h2>
-              <h3>Service 4</h3>
-              <p>test</p>
-              </div>
-    </div>
 
 
 
 
-  <!--THIS IS THE END OF THE GRID LAYOUT CODE-->
+
+
+
+
+  <!--THIS IS THE END OF THE FLIP CARD GRID LAYOUT CODE-->
 
   <br>
   <br>
@@ -100,7 +130,7 @@
       
         <!--THIS IS THE ABOUT US SECTION-->
         <h1>About S Star Auto</h1>
-        <h2>ahfljfhaskdljfkdljfhskaldjfhkslajdhfksaldjfhasdkljfhsdakljfhsadkljfhsadlkjfhsalk</h2>
+        <h2>Insert text about us</h2>
         <img id="aboutUsCars" src="./Images Created/About Us.png" alt="">
         <!--THIS IS THE END OF THE ABOUT US SECTION-->
 
@@ -113,6 +143,7 @@
 
 <!--THIS IS THE CONTACT FORM CODE-->
 
+<h1>Want to know more? Let us give you a call!</h1>
 <div class="container">
   <form action="results.html">
     <div class="row">
@@ -161,31 +192,53 @@
   </body>
 
   <!--THIS IS THE FOOTER CODE-->
-  <footer>
-    <div class="footer-content">
-      <h2>Our Contact Info</h2>
-      <p>Phone Number: 647-436-5088</p>
-      <ul>
-        Address: 373 Danforth Rd, Scarborough, ON M1L 3X8
-      </ul>
-      <ul>
-        Timings: 
-        Sunday	Closed
-        Monday	9a.m.–6p.m.
-        Tuesday	9a.m.–6p.m.
-        Wednesday	9a.m.–6p.m.
-        Thursday	9a.m.–6p.m.
-        Friday	9a.m.–6p.m.
-        Saturday	9a.m.–4p.m.
-      </ul>
-      <ul>
-        E-mail: addemail@gmail.com
-      </ul>
-      <!--
-      <div class="google_maps">
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3058187703396!2d-79.2715378841407!3d43.704193257149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce8a9fb5367f%3A0xe8c0745705d10808!2sS%20Star%20Auto%20Service!5e0!3m2!1sen!2sca!4v1634441162867!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <img src="./Logo Designed/First Simple Logo.png">
+      <h3>S Star<span>Auto</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        |
+        <a href="#">Services</a>
+        |
+        <a href="#">About Us</a>
+        |
+        <a href="#">Reviews</a>
+      </p>
+
+      <p class="footer-company-name">© 2021 S Star Auto Inc.</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+          <p><span> 373 Danforth Rd</span>
+          Scarborough, ON M1L 3X8</p>
+          <iframe class = "gMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11537.224017406685!2d-79.2693492!3d43.7041894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8c0745705d10808!2sS%20Star%20Auto%20Service!5e0!3m2!1sen!2sca!4v1636853604723!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      -->
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>647-436-5088</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:addemail@gmail.com">addemail@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Fill in later.</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
     </div>
   </footer>
 

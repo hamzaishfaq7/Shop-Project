@@ -20,9 +20,115 @@ html {
 
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .changeText{
   color: #0088A9;
 }
+
+/*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24252A;
+  color: white;
+}
+
+.logo{
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+  margin: .5rem;
+}
+
+
+.navbarLinks ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.navbarLinks li{
+  list-style: none;
+
+}
+
+.navbarLinks li a{
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  display: block;
+  font-size: 25px;
+}
+
+.navbarLinks a:hover{
+  color: #0088A9;
+}
+
+.toggle{
+  position: absolute;
+  top: 6.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 41px;
+  height: 31px;
+}
+
+.toggle .barsForMobile{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .toggle{
+    display: flex;
+  }
+
+  .navbarLinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbarLinks ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbarLinks li{
+    text-align: center;
+  }
+
+  .navbarLinks a{
+    padding: 0.5rem 1rem;
+  }
+
+  .navbarLinks.active {
+    display: flex;
+  }
+}
+
+
+
+
+/*THIS IS THE END OF THE CODE FOR THE NAVBAR LAYOUT*/
+
 
 
 /*THIS IS THE END OF THE CODE FOR THE GENERIC LAYOUT*/
@@ -33,7 +139,7 @@ html {
 
 .slideShow{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -148,9 +254,15 @@ html {
 
 /*THIS IS THE CODE FOR THE FLIP CARDS LAYOUT*/
 
+
+.ChangeColor{
+  color: #0088A9;
+}
+
+
 .services{
 	width:100%;
-	height: 100vh;
+	height: 70vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -162,7 +274,7 @@ html {
 }
 .s-heading h1{
 	color:white;
-	font-size: 5rem;
+	font-size: 5.5rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 	margin: 0px;
@@ -185,7 +297,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	width:300px;
+	width:500px;
 	padding: 8px 25px;
 	height: 500px;
 	box-sizing: border-box;
@@ -193,7 +305,7 @@ html {
 	position: relative;
 }
 .s-box img{
-	height: 200px;
+	height: 300px;
   width: 100%;
 }
 .s-box h1{
@@ -212,12 +324,15 @@ html {
 	width: 140px;
 	height: 40px;
 	border-radius: 20px;
-	border:1px solid rgba(74,144,226,0.50);
+	border:1px solid #0088A9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color:#white;
+	background-color:#0088A9;
 	margin-top:10px; 
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
 }
 .bar{
 	width: 100px;
@@ -229,11 +344,11 @@ html {
 	background-color:#4a90e2; 
 	border-radius: 0px 0px 10px 10px;
 	display: none;
-	animation: bar 0.5s;
+	animation: bar 0.8s;
 }
 .s-box:hover{
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
-	transition: all ease 0.3s;
+	transition: all ease 0.5s;
 }
 .s-btn:hover{
 	background-color:#4a90e2;
@@ -264,7 +379,7 @@ html {
 		margin: 15px;
 	}
 	.s-box{
-		flex-grow: 1;
+		flex-grow: 3;
 	}
 	
 }
@@ -298,180 +413,100 @@ html {
 
 
 
+/*THIS IS THE CODE FOR THE FORM LAYOUT*/
 
+.aboutUsWhite{
+  color: white;
+}
 
-/*THIS IS THE CODE FOR THE NAVBAR AND BUTTON LAYOUT*/
-
-
-li, a, button{
-
-  font-family: "Merriweather", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #ECF0F1;
-  text-decoration: none;
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 15px;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+  color: white;
   
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 10%;
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #24252A;
+  padding: 20px;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+  
+  
+}
+
+.row{
+  margin: auto;
+  max-width: 800px;
 }
 
 
-  .logo{
-    width: 400px;
-    cursor: pointer;
-    padding: 40px;
-  }
 
-  
-  .navlinks{
-    list-style: none;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .navlinks li {
-  
-    display: inline-block;
-    padding: 0px 20px;
-  }
-
-  .navlinks li a {
-
-    transition: all 0.3s ease 0s;
-
-  }
-
-  .navlinks li a:hover {
-
-    color: #0088A9;
-
-  }
-
-  button {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-
-  button.hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
-
-  .sizer{
-
-    padding: auto;
-    max-height: 200px;
-
-
-  }
-
-
-
-  nav{
-    flex: 1;
-    padding-right: 40px;
-  }
-
-  nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 5px 15px;
-  }
-
-  nav ul li a{
-    text-decoration: none;
-    color: #ECF0F1;
-  }
-
-  .content h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    color: #ECF0F1;
-  }
-
-  .content p{
-    font-size: 20px;
-   color: #ECF0F1;
-  }
-
-  .content{
-    margin-left: 10%;
-    margin-top: -10%;
-    
-  }
-
-  .content .btn{
-    display: inline-block;
-    background: linear-gradient(45deg,#ECF0F1, grey);
-    border-radius: 6px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #ECF0F1;
-    box-shadow: 3px 8 px 88 px rgba(94,28,68,0.15);
-  }
-
-
-
-
-
-  h1{
-    color: #ECF0F1;
-    text-align: center;
-    padding: 10px;
-  }
-
-  h2{
-    color: #ECF0F1;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-  }
-
-  h5{
-    color: #ECF0F1;
-  }
-
-  p{
-    color: #ECF0F1;
-  }
-  
-
-  ul{
-
-    color: #ECF0F1;
-  }
-
-
-
-
-  .textWrapper{
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
     width: 100%;
-    position: relative;
-    
+    margin-top: 0;
   }
-
-  .textWrapper h1{
-    text-align: center;
-    color: #ECF0F1;
-    font-size: 10vw;
-    
-  }
+}
 
 
+.column{
+  width: 25em;
+}
 
 
+/*THIS IS THE END OF THE CODE FOR THE FORM LAYOUT*/
 
 
-/*THIS IS THE END OF THE CODE FOR THE NAVBAR AND BUTTON LAYOUT*/
 
 
 /*THIS IS THE CODE FOR THE FOOTER LAYOUT*/
@@ -664,7 +699,7 @@ footer{
 .footer-icons {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 }
@@ -679,91 +714,15 @@ footer{
 
 
 
-
-/* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  color: white;
-  font-size: 20px;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: rgba(0, 136, 169, 1);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #24252A;
-  padding: 20px;
-  flex-direction:column;
-  justify-content:center;
-  text-align:center;
-}
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-.column{
-  width: 25em;
-}
-
-
-
-
-
 /*RANDOM STUFF*/
 
 
 
 
-.formSection{
-  align-items: center;
-  display: list-item;
-  box-sizing: border-box;
+.phoneFooter{
+  color: white;
+}
+
+.aboutUsWhite{
+  font-size: 45px;
 }

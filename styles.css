@@ -663,19 +663,19 @@ footer{
 
 .footer-distributed .footer-icons a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 75px;
+	height: 75px;
 	cursor: pointer;
 	background-color:  #33383b;
-	border-radius: 20px;
+	border-radius: 90px;
 
-	font-size: 20px;
+	font-size: 40px;
 	color: #4a90e2;
 	text-align: center;
-	line-height: 35px;
+	line-height: 5px;
 
 	margin-right: 3px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 /* Here is the code for Responsive Footer */
@@ -689,7 +689,7 @@ footer{
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 		text-align: center;
 	}
 
@@ -700,12 +700,13 @@ footer{
 
 
 /* Style all font awesome icons */
-.footer-icons {
-  padding: 20px;
+.footer-icons a {
+  padding: 15px;
   font-size: 30px;
   width: 100%;
   text-align: center;
   text-decoration: none;
+  background-color: transparent;
 }
 
 /* Add a hover effect if you want */
